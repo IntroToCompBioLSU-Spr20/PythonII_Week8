@@ -1,10 +1,10 @@
 #!/bin/env python
 
-# Write a python script that accepts a sequence from the user and prints out
-the reverse complement to the screen (- Reverse the sequence and - Generate the complement of the sequence)
+# Write a python script that accepts a sequence from the user and prints out the reverse complement to the 
+# screen (- Reverse the sequence and - Generate the complement of the sequence)
 
 # creating a variable that will allow me to ask the user for a DNA sequence. at the point I'm gonna ask the for the same type 
-of font (uppercase in this case) for all sequences, so there is no further confusion when typing the commands
+# of font (uppercase in this case) for all sequences, so there is no further confusion when typing the commands
 
 DNA=input("Please, enter a DNA sequence in UPPERCASE: ")
 
