@@ -1,0 +1,29 @@
+#!/bin/env python
+
+# Write a python script that accepts a sequence from the user and prints out
+the reverse complement to the screen (- Reverse the sequence and - Generate the complement of the sequence)
+
+# creating a variable that will allow me to ask the user for a DNA sequence. at the point I'm gonna ask the for the same type 
+of font (uppercase in this case) for all sequences, so there is no further confusion when typing the commands
+
+DNA=input("Please, enter a DNA sequence in UPPERCASE: ")
+
+# after getting the user's sequence, my script will reverse it
+
+DNArc=DNA[::-1]
+
+# finally, the script has to provide the complement of the sequence and make sure that is in the same numbers of lines as 
+the sequence was input, only one
+
+for x in DNArc:
+    if(x == "A"): print("T", end = "")
+    elif(x == "T"): print("A", end = "")
+    elif(x == "C"): print("G", end = "")
+    elif(x =="G"): print("C", end = "")
+
+#then, a string telling the user the final outcome
+
+print("This is the reverse complement of the original sequence:", DNArc)
+
+
+
