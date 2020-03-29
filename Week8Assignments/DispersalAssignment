@@ -1,77 +1,112 @@
-/usr/bin/env python
+Last login: Sun Mar 29 15:26:46 on ttys000
+You have new mail.
+(base) Kynnedis-MacBook-Air:~ kynnedisonnier$ ls
+Applications		Library			PythonIII_Week9
+Creative Cloud Files	MacKeeper Backups	PythonII_Week8
+Desktop			Movies			Standard Notes Backups
+Documents		Music			med scribe.txt
+Downloads		Pictures		partnerDNA.sh
+IntroPython_Week7	Public
+(base) Kynnedis-MacBook-Air:~ kynnedisonnier$ cd PythonII_Week8/
+(base) Kynnedis-MacBook-Air:PythonII_Week8 kynnedisonnier$ ls
+Dispersal_assignment.ipynb	README.md
+ExampleJupyterNotebook.ipynb	Week8Assignments
+(base) Kynnedis-MacBook-Air:PythonII_Week8 kynnedisonnier$ cd ..
+(base) Kynnedis-MacBook-Air:~ kynnedisonnier$ cd PythonIII_Week9
+(base) Kynnedis-MacBook-Air:PythonIII_Week9 kynnedisonnier$ ls
+DispersalWeek9_Sonnier.ipynb		Week9_Practice.ipynb
+README.md				Week9_Self.ipynb
+SimulateDNAEvolution.ipynb		coronaData.txt
+SimulateDNAEvolution_Sonnier.ipynb	untitled.txt
+Week9Assignments
+(base) Kynnedis-MacBook-Air:PythonIII_Week9 kynnedisonnier$ cd ..
+(base) Kynnedis-MacBook-Air:~ kynnedisonnier$ cd PythonII_Week8/
+(base) Kynnedis-MacBook-Air:PythonII_Week8 kynnedisonnier$ ls
+Dispersal_assignment.ipynb	README.md
+ExampleJupyterNotebook.ipynb	Week8Assignments
+(base) Kynnedis-MacBook-Air:PythonII_Week8 kynnedisonnier$ nano Dispersal_assignment.ipynb 
 
-import random
-from copy import copy
-dirs = ["u","u","u","u","d","l","r"]
-days = 10
-pos = [0,0]
-posLog = [10]
-posLog.append( copy(pos) )
-for day in range(10):  # Loop over the specified number of days
-    move = random.choice(dirs) # Randomly draws a direction - u, d, l, or r
-    if move == "u": # Test what direction was drawn and update position accordingly
-       pos[1] = int(pos[1]) + 1
-    elif move == "d":
-        pos[1] = int(pos[1]) - 1
-    elif move == "l":
-        pos[0] = int(pos[0]) + 1
-    elif move == "r"
-        pos[0] = int(pos[0]) - 1
-    else:
-        print("Something's wrong! Direction is not u, d, l, or r.")
-    posLog.append( copy(pos) )
 
-dayten = posLog[10]
-hyp = dayten[0]**2 + dayten[1]**2
-hyp**(0.5) 
-def drawMap(posLog):
-    """Function to draw an ascii map."""
-    
-    map = []
-    absMax = 0
-    for pos in posLog:
-        if abs(pos[0]) > absMax:
-            absMax = abs(pos[0])
-        if abs(pos[1]) > absMax:
-            absMax = abs(pos[1])
-    size = (absMax * 2) + 1
-    for _ in range(size):
-        map.append([])
-    for row in map:
-        for i in range(size):
-            row.append("-")
-    for pos in posLog:
-        map[-1*(pos[1]+absMax+1)][pos[0]+absMax] = "*"
-    for row in map:
-        rStr = ""
-        for c in row:
-            rStr += str(c)
-        print(rStr)
-drawMap(posLog)
-#Now let's draw a map! We'll execute our new function and pass it the position
-#log as an argument.
-drawMap(posLog)
-#Now, look at the last position of the individual
-posLog[-1]
-[7,3]
-#import mathematical functions
-import math
-#define origin and point 2
-p1 = [0,0]
-p2 = posLog[-1]
-#use pythagorean theorem to calculate distance
-distance = math.sqrt(((p1[0]-p2[0]**2)+((p1[7]-p2[3])**2)) 
-print(distance)
-10
-# Run simulation for 
-[1,1]
-[1,3]
-[-1,5]
-[2,6]
-[1,-1]
-[2,4]
-[-2,4]
-[1,9]
-[2,4]
-[-2,2]
-#A random model seems to be an acceptable way to calculate data 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  GNU nano 2.0.6                File: Dispersal_assignment.ipynb                            Modified  
+
+    "\n",
+    "    absMax = 0\n",
+    "    for pos in posLog:\n",
+    "        if abs(pos[0]) > absMax:\n",
+    "            absMax = abs(pos[0])\n",
+    "        if abs(pos[1]) > absMax:\n",
+    "            absMax = abs(pos[1])\n",
+    "    size = (absMax * 2) + 1\n",
+    "\n",
+    "    for _ in range(size):\n",
+    "        map.append([])\n",
+    "\n",
+    "    for row in map:\n",
+    "        for i in range(size):\n",
+    "            row.append(\"-\")\n",
+    "\n",
+    "    for pos in posLog:\n",
+    "        map[-1*(pos[1]+absMax+1)][pos[0]+absMax] = \"*\"\n",
+    "\n",
+    "    for row in map:\n",
+    "        rStr = \"\"\n",
+    "        for c in row:\n",
+    "            rStr += str(c)\n",
+    "        print(rStr)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now let's draw a map! We'll execute our new function and pass it the position log as an argument$
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "drawMap(posLog)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In these maps, the dashes (`-`) represent the entire landscape background, and the asterisks (`*$
+    "\n",
+    "Now, look at the last position of the individual (i.e., the last entry in `posLog` - hint, try `$
+   ]
+  },
+  {
+
